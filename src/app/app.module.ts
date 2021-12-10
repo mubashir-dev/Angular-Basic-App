@@ -5,12 +5,14 @@ import {AppComponent} from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { SliderComponent } from './slider/slider.component';
 import {CommonModule} from "@angular/common";
+import { BodyComponent } from './body/body.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    SliderComponent
+    SliderComponent,
+    BodyComponent
   ],
   imports: [
     BrowserModule,
