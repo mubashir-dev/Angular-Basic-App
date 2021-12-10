@@ -1,8 +1,12 @@
-<div id="carouselExampleControls" class="carousel slide h-25" data-bs-ride="carousel">
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner h-25">
     <ng-container *ngFor="let imagesLink of imagesLinks ">
       <div class="carousel-item" [ngClass]="{'active':imagesLink?.active}">
         <img src="{{imagesLink.path}}" class="d-block w-100 h-50" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="text-primary text-capitalize">{{imagesLink?.heading}}</h2>
+          <h4 class="text-white">{{imagesLink?.paragraph}}</h4>
+        </div>
       </div>
     </ng-container>
   </div>
