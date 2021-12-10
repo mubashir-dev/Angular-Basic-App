@@ -7,11 +7,13 @@ import {Component, OnInit} from '@angular/core';
 })
 export class BodyComponent implements OnInit {
   services: any[] | undefined;
+  title: string | undefined;
 
   constructor() {
   }
 
   ngOnInit(): void {
+    this.title = "Technology Stack";
     this.services = [
       {
         category: 'Development',
@@ -30,6 +32,18 @@ export class BodyComponent implements OnInit {
         startFrom: 200,
         title: 'Cloud Hosting',
         content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been",
+        image: "https://cdn.pixabay.com/photo/2020/04/18/17/06/decoration-5060006_1280.jpg"
+      }, {
+        category: 'Research',
+        startFrom: 200,
+        title: 'Requirement Engineering',
+        content: "KFJSDKLJFLSDJFLS;DFJSDLKFJSLDFJSDLKFJSLDKFJSDLKFJSLDK",
+        image: "https://cdn.pixabay.com/photo/2020/04/18/17/06/decoration-5060006_1280.jpg"
+      }, {
+        category: 'Research',
+        startFrom: 200,
+        title: 'Requirement Engineering',
+        content: "KFJSDKLJFLSDJFLS;DFJSDLKFJSLDFJSDLKFJSLDKFJSDLKFJSLDK",
         image: "https://cdn.pixabay.com/photo/2020/04/18/17/06/decoration-5060006_1280.jpg"
       }, {
         category: 'Research',
