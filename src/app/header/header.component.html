@@ -11,7 +11,7 @@
           <li class="nav-item" *ngFor="let menu of menus"
               [ngClass]="{'dropdown':menu.sub?.length}">
             <a class="nav-link active" [ngClass]="{'dropdown-toggle':menu.sub?.length}" aria-current=" page"
-               [routerLink]="'/'" [attr.data-bs-toggle]="menu.sub?.length ? 'dropdown' : undefined">{{menu.title}}</a>
+               routerLink='{{menu?.permalink}}' [attr.data-bs-toggle]="menu.sub?.length ? 'dropdown' : undefined">{{menu.title}}</a>
             <ng-container *ngIf="menu.sub?.length">
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li *ngFor="let sub of menu.sub">
