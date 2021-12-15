@@ -14,16 +14,21 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
     this.menus = [{
-      title: 'Home'
+      title: 'Home',
+      permalink: '/'
     },
       {
-        title: 'About'
+        title: 'About',
+        permalink: '/about'
       },
       {
-        title: 'Contact'
+        title: 'Contact',
+        permalink: '/contact'
+
       },
       {
         title: 'Services',
+        permalink: 'services',
         sub: [
           'App Development',
           'Web Development',
